@@ -1,0 +1,995 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    }
+    body{
+        font-family: sans-serif;    
+    }
+    nav{
+        height: 75px;
+        width: 100%;
+        position: static;
+        cursor: pointer;
+    }
+    nav legend label span{
+        font-size: 25px;
+    }
+    nav label p{
+        font-size: 25px;
+        font-weight: bold;
+    }
+    nav img{
+        height: 75px;
+        width: 80px;
+        border-radius: 9px;
+        float: left;
+        margin-left: 5px;
+    }
+    .src{
+        float: left;
+    }
+    label.logo{
+        color: #3ab54a;
+        font-size: 26px;
+        padding: 10px;
+        font-weight: bold;
+        float: left;
+        margin-left: 14x;
+        
+    }
+    nav ul{
+        float: right;
+        margin-right: 20px;
+    }
+    nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    }
+    nav ul li a{
+        color: white;
+        font-size: 17px;
+        padding: 7px 13px;
+        border-radius: 3px;
+    }
+    nav ul li ul{
+        position: absolute;
+        display: none;
+        background-image: linear-gradient(to right, #2e3094,#3ab54a);
+        border-radius: 0px 0px 5px;
+    }
+    nav ul li:hover ul{
+        display: block;
+    }
+    nav ul li ul li{
+        line-height: 1;
+        width: 170px;
+        border-radius: 3px;
+        padding: 4px;
+    }
+    a.active,a:hover{
+        background-image: linear-gradient(to right, #3ab54a,#2e3094);
+        transition: .5s;
+        border-radius: 5px;
+        box-shadow: 5px 2px 10px #3ab54a;
+    }
+    nav .checkbtn{
+        font-size: 25px;
+        color: white;
+        float: right;
+        line-height: 20px;
+        margin-right: 3px;
+        cursor: pointer;
+        display: none;
+    }
+    #check{
+        display: none;
+    }
+
+    .bethel{
+        background-color: #0003;
+        border-radius: 15px;
+
+    }
+    .fetel{
+        background: url(background.jpg) no-repeat;
+        background-size: cover;
+        height: calc(115vh - 90px);
+        background-blend-mode: darken;
+        background-attachment: fixed;
+        background-position: center;
+        background-color: #0005;
+        border-radius: 10px;
+    }
+    .detel{
+        margin-left: 8%;
+        margin-top: 10%;
+    }
+    .detel h1{
+        font-size: 50px;
+        color: white;
+        margin-bottom: 20px;
+    }
+    .detel h2{
+        font-size: 25px;
+        color: white;
+        margin-bottom: 20px;
+    }
+    .detel p{
+        color: white;
+        line-height: 26px;
+    }
+    span{
+        color: #3ab54a;
+    }
+   
+    .detel a{
+        background-image: linear-gradient(to right, #2e3094,#3ab54a);
+        padding: 10px 18px;
+        text-decoration: none;
+        font-weight: bold;
+        color: rgb(239, 239, 245);
+        display: inline-block;
+        margin: 30px 0;
+        border-radius: 5px;
+
+    }
+    .sesel a{
+        background-image: linear-gradient(to right, #2e3094,#22a033);
+        padding: 6px 10px;
+        text-decoration: none;
+        font-size: 12px;
+        font-weight: bold;
+        color: rgb(221, 221, 226);
+        display: inline-block;
+        margin: 20px 0;
+        border-radius: 5px;
+
+    }
+    .about{
+        background-color: whitesmoke;
+        height: calc(90vh - 80px);
+        border-radius: 15px;
+        border-radius: 10px;
+    }
+    .about h2{
+        color: rgb(22, 21, 21);
+        text-align: center;
+        font-size: 35px;
+    }
+    .about h3{
+        color: rgb(22, 21, 21);
+        text-align: center;
+        font-size: 17px;
+        font-weight: normal;
+    }
+    .about h1{
+        color: rgb(22, 21, 21);
+        text-align: center;
+    }
+    .team{
+        display: flex;
+        width: auto;
+        justify-content: center;
+        
+    }
+    .team .teammember{
+    background: #3ab54a;
+    margin: 10px;
+    border-radius: 10px;
+    width: 250px;
+    height: 280px;
+    padding: 1%;
+    }
+    .about .team .teammember .team_img img{
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        position: relative;
+    }
+    
+    .team .teammember .team_img h1{
+        font-family: cursive;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .team .teammember .team_img p{
+        font-family: cursive;
+        font-size: 14px;
+        font-weight: normal;
+        text-align: center;
+        color: rgb(15, 24, 15);
+    }
+    .support{
+        background: url(image.webp) no-repeat;
+        background-size: cover;
+        background-blend-mode: darken;
+        height: calc(45vh - 30px); 
+        background-position: center;
+        background-color: #0007;
+        border-radius: 10px;
+    }
+    .support h1{
+        color: #fafafa;
+        text-align: center;
+        font-family: cursive;
+    }
+    .support h2{
+        color: #fafafa;
+        text-align: center;
+        font-size: 19px;
+        font-family: cursive;
+    }
+    .support p{
+        text-align: center;
+    }
+    .support p a{
+            background-image: linear-gradient(to right, #2e3094,#3ab54a);
+            padding: 10px 18px;
+            font-weight: bold;
+            color: #cacad4;
+            display: inline-block;
+            margin: 30px 0;
+            border-radius: 5px;
+    }
+    .events{
+        height: calc(95vh - 80px);
+        border-radius: 10px;
+        background-color: rgb(240, 240, 240);
+        
+    }
+    .events .container{
+        width: 1120px;
+    }
+    .container{
+        width: 95%;
+        display: flex;
+       
+        padding: 30px;
+    }
+    title H1{
+        font-size: 25px;
+    }
+    .content-section{
+        float: left;
+        width: 50%;
+        margin-left: 7%;
+    }
+    .content-section .content{
+        font-size: 20px;
+    }
+    .image-section{
+        float: right;
+        width: 43%;
+    }
+    .events .container .image-section img{
+        margin: 4%;
+        width: 100%;
+        height: 390px;
+        border-radius: 10px;
+    }
+    .leadership{
+        background-color: #3ab54a;
+        height: calc(90vh - 80px);
+        border-radius: 10px;  
+    }
+    .scroll-images {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+      }
+      
+      .scroll-images::-webkit-scrollbar {
+        width: 5px;
+        height: 8px;
+        background-color: #aaa;
+      }
+      
+      .scroll-images::-webkit-scrollbar-thumb {
+        background-color: black;
+      }
+      
+      .child {
+        width: 120px;
+        height: 100px;
+        margin: 1px 10px;
+        overflow: hidden;
+      }
+      .cover {
+        padding: 0px 30px;
+        position: relative;
+      }
+      .left {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      .right {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    .leadership .team{
+        display: flex;
+        margin-left: 5px;
+        overflow-x: auto;
+        min-width: 200px;
+    }
+    .leadership .team::-webkit-scrollbar{
+        width: 0;
+    }
+    .leadership h2{
+        font-size: 30px;
+        text-align: center;
+    }
+    .leadership h3{
+        font-size: 17px;
+        text-align: center;
+        font-weight: normal;
+    }
+    .leadership .team .teammember{
+        background: rgb(244, 245, 244);
+        margin: 1%;
+        border-radius: 10px;
+        width: 211px;
+        height: 230px;
+        padding: 9px;
+        }
+        .leadership .team legend .teammember{
+            margin-top: 15px;
+            margin-left: 85px;
+        } 
+    .leadership .team_img img{
+        height: 160px;
+        width: 190px;
+        border-radius: 10px;
+    }
+    .leadership .team .teammember .team_img h1{
+        font-size: 15px;
+    }
+    .team_img img{
+        overflow: hidden;
+      }
+      
+      .team_img:hover img{
+      transform: scale(1.1);
+      }
+      
+      .team-img img{
+        transition: 0.52s;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+      }
+      .event1{
+        background-color: rgb(240, 240, 240);
+        height: calc(95vh - 80px);
+        border-radius: 10px;
+      }
+
+    .event1 .container .food-box{
+    background: #2e3094;
+    margin: 1%;
+    border-radius: 10px;
+    width: 260px;
+    height: 220px;
+    padding: 7px;
+    }
+    .event1 .image-container{
+        width: 312px;
+        display: block;
+        position: relative;
+        cursor: pointer;
+    }
+    .event1 .image-container img{
+        width: 75%;
+        height: 208px;
+        border-radius: 10px;
+    }
+    .event1 .overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 53%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.5);
+        display: block;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        opacity: 0;
+        transition: opacity 0.6s ease;
+    }
+    .event1 .team .teammember h5{
+        color: #3ab54a;
+        font-size: 15px;
+        font-weight: normal;
+        text-align: center;
+        font-family: cursive;
+    }
+    .event1 .image-text{
+        color: rgb(241, 243, 243);
+        font-size: 17px;
+        font-weight: normal;
+        text-align: center;
+        font-family: sans-serif;
+    }
+    .event1 .image-container:hover .overlay{
+        opacity: 1;
+    }
+    .event1 .team .teammember h3{
+        color: rgb(163, 38, 157);
+        font-size: 13px;
+        font-family: cursive;
+    }
+    .event1 .team .teammember p{
+        color: rgb(19, 22, 19);
+        font-size: 15px;
+        font-family: cursive;       
+    }
+    .event1 .teammember.active,.teammember:hover{
+        background-image: linear-gradient(to right, #3ab54a, #3ab54a);
+        transition: .5s;
+        box-shadow: 5px 5px 20px rgb(30, 37, 30);
+    }
+      .event1 .shop-content{
+        display: flex;
+        margin-left: 1px;
+        margin-left: 8px;
+        overflow-x: auto;
+        min-width: 1090px;
+        height: 300px;
+    }
+    .event1 .shop-content::-webkit-scrollbar{
+        width: 0;
+    }
+      html{
+        scroll-behavior: smooth;
+      }
+      .event1 .cover{
+        width: 1180px;
+      }
+      .event1 .scroll-images {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+      }
+      
+      .event1 .scroll-images::-webkit-scrollbar {
+        width: 5px;
+        height: 8px;
+        background-color: #aaa;
+      }
+      
+      .event1 .scroll-images::-webkit-scrollbar-thumb {
+        background-color: black;
+      }
+      
+      .event1 .child {
+        width: 120px;
+        height: 100px;
+        margin: 1px 10px;
+        overflow: hidden;
+      }
+      .event1 .cover {
+        padding: 0px 30px;
+        position: relative;
+      }
+      .event1 .cover .left {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      .event1 .cover .right {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      .container{
+        max-width: 1650px;
+        padding: 2px;
+        margin: 2px;
+        width: 100%;
+      }
+      .event1 .container{
+        max-width: 290px;
+        height: 100%;
+        padding: 1px;
+        width: 100%;
+    }
+      .event1 h4{
+        text-align: center;
+        font-size: 30px;
+      }
+      .event1 h3{
+        text-align: center;
+        font-size: 15px;
+        font-weight: 540;
+      }
+      
+      .shop-content{
+        display: flex;
+        grid-template-columns: repeat(auto-fit,minmax(150px,auto));
+        gap: 5px;
+
+      }
+      
+      .food-box{
+        position: relative;
+        padding: 5px;
+        box-shadow: 0 1px 4px rgba(40, 37, 37, 0.1);
+        background: aliceblue;
+        margin: 1px;
+        border-radius: 10px;
+        width: 235px;
+        height: 230px;
+      }
+      .food-box:hover{
+          background-image:linear-gradient(to right, aqua, #2e3094);
+          transition: .5s;
+          box-shadow: 5px 5px 20px rgb(30, 37, 30);
+        }
+      
+      .pic{
+        height: 205px;
+        width: 235px;
+        border-radius: 10px;
+      }
+      
+      .food-img{
+        transition: 0.4s;
+        aspect-ratio: 1/1;
+        height: 250px;
+        width: 205px;
+      }
+      
+      .food-title{
+        font-size: 17px;
+        font-weight: 540;
+        margin-top: 16px;
+        text-align: center;
+        color:#0c080c;
+        font-family: 'Times New Roman', Times, serif;
+      }
+      
+      .testimonials{
+        background: url(test9.webp) no-repeat;
+        background-size: cover;
+        height: calc(70vh - 90px);
+        background-blend-mode: darken;
+        background-position: center;
+        background-color: #0007;
+        border-radius: 10px;   
+    }
+    .testimonials h4{
+        color: white;
+        font-size: 24px;
+        text-align: center;
+    }
+    .testimonials h3{
+        color: rgb(209, 205, 205);
+        font-weight: 550;
+        text-align: center;
+    }
+    .testimonials p{
+        text-align:  center;
+        color: white;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .testimonials p span{
+        font-size: 34px;
+    }
+    .testimonials .slide img{
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        margin-left: 48%;
+    }
+    .testimonials .slide:hover img{
+        transform: scale(1.3);
+        }
+        
+        .testimonials .slide img{
+          transition: 0.32s;
+          aspect-ratio: 1/1;
+          object-fit: cover;
+        }
+    .clinton{
+        overflow: hidden;
+        width: 100%;
+        height: 60vh;
+    }
+    .clinton figure div{
+        float: left;
+        width: 20%;
+    }
+    .clinton figure img{
+        width: 100%;
+        height: 60vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        float: left;
+    }
+    .clinton figure{
+        position: relative;
+        width: 500%;
+        margin: 0;
+        animation: animate 90s infinite;
+    }
+
+    @keyframes animate{
+        0%{left:0%;}
+        10%{left:0%;}
+        12%{left:-100%;}
+        22%{left:-100%;}
+        24%{left:-200%;}
+        34%{left:-200%;}
+        36%{left:-300%;}
+        46%{left:-300%;}
+        48%{left:-400%;}
+        58%{left:-400%;}
+        60%{left:-300%;}
+        70%{left:-300%;}
+        72%{left:-200%;}
+        82%{left:-200%;}
+        84%{left:-100%;}
+        94%{left:-100%;}
+        96%{left:0%;}
+    }
+    .contact h1{
+        color: rgb(240, 243, 239);
+        margin-left: 4%;
+    }
+    .contact h3{
+        color: rgb(234, 236, 236);
+        margin-right: 58%;
+    }
+
+    .contact p{
+        margin-right: 55%;
+        font-weight: bold;
+    }
+    .contact{  
+        background-image: linear-gradient(to right, #2e3094,#2e3094);
+        height: calc(83vh - 80px);
+        border-radius: 10px;
+    }
+    .contact p a img{
+        border-radius: 30px;
+        height: 40px;
+        width: 40px;
+        padding: 1px;
+        margin-left: 5px;
+    }
+    .contact p a a.active,a:hover{
+    box-shadow: 5px 2px 10px #3ab54a;
+    }
+    .me{
+        position: absolute;
+        width: 70%;
+        margin-left: 10%;
+    }
+    .contact .shom{
+        background-image: linear-gradient(to right, white,rgb(137, 146, 228));
+        bottom: 30;
+        position: absolute;
+        margin-left: 45%;
+        width: 45%;
+        border-radius: 20px;
+    }
+    .submit{
+        margin-left: 150px;
+        margin-bottom: 10px;
+        width: 100px;
+    }
+    .form .pea input{
+        width: 350px;
+        height: 26px;
+        margin-left: 30px;
+    }
+    .form textarea{
+        width: 350px;
+        height: 46px;
+        margin-left: 30px;
+    }
+    strong{
+        color: rgb(14, 245, 14);
+    }
+    .copyright{
+        margin-top: 290px;
+        text-align: center;
+    }
+    legend{
+        text-align: center;
+    }
+    @media screen and (max-width: 1200px)
+    {
+        body{
+            width: auto;
+        }
+        .event1 .cover{
+            width: 950px;
+            height: 600px;
+          }
+
+    }
+    @media screen and (max-width: 768px)
+    {
+        body{
+            width: auto;
+        }
+        nav .checkbtn{
+            display: block;
+            margin-top: 17px;
+            margin-right: 20px;
+        }
+        ul{
+            position: absolute;
+            width: 360px;
+            height: 15vh;
+            background: rgba(0, 0, 0, 0.8);
+            top: 55px;
+            left: -100%;
+            text-align: center;
+            border-radius: 5px;
+            transition: all .9s;
+        }
+        #check:checked ~ ul{
+            left: 0;
+        }
+        nav ul label i{
+            color: white;
+        }
+        nav{
+            height: 55px;
+            position: static;
+        }
+        nav legend label span{
+            font-size: 15px;
+        }
+        nav label p{
+            font-size: 13px;
+        }
+        nav legend img{
+            height: 55px;
+            width: 55px;
+            margin-left: 7px;
+        }
+        nav ul{
+            float: right;
+        }
+        nav ul li{
+        line-height: 20px;
+        margin: 0 1px;
+        display: block;
+        }
+        nav ul li a{
+            font-size: 10px;
+            padding: 5px 19px;
+            margin: 7px;
+            border-radius: 7px;
+        }
+        .fetel{
+            background: url(background.jpg) no-repeat;
+            background-size: cover;
+            height: calc(100vh - 90px);
+            background-blend-mode: darken;
+            background-attachment: fixed;
+            background-position: center;
+            background-color: #0005;
+            border-radius: 10px;
+        }
+        .detel{
+            margin-left: 9%;
+            margin-top: 32%;
+        }
+        .detel h1{
+            font-size: 35px;
+        }
+        .detel h2{
+            font-size: 22px;
+        }
+        .about{
+            background-color: whitesmoke;
+            height: calc(200vh - 80px);
+            border-radius: 15px;
+            border-radius: 10px;
+        }
+        .about h2{
+            font-size: 30px;
+        }
+        .about h3{
+            font-size: 14px;
+        }
+        .team{
+            display: block;
+            justify-content: center;   
+        }
+        .team .teammember{
+        margin: 10%;
+        justify-content: center;
+        border-radius: 10px;
+        width: 280px;
+        padding: 1%;
+        }
+        .support{
+            height: calc(39vh - 30px); 
+        }
+        .support h1{
+            font-size: 25px;
+        }
+        .support h2{
+            font-size: 13px;
+        }
+        .events{
+            height: calc(110vh - 80px);  
+        }
+        .events .container{
+            width: 300px;
+        }
+        .container{
+            width: 80%;
+            display: block;
+            margin: auto;
+            padding: 0px;
+        }
+        .title H1{
+            font-size: 23px;
+        }
+        .content-section{
+            float: left;
+            width: 100%;
+            margin-left: 1px;
+        }
+        .content-section .content{
+            font-size: 15px;
+        }
+        .image-section{
+            float: none;
+            width: 100%;
+            margin-right: 20px;
+        }
+        .events .container .image-section img{
+            margin: 1%;
+            height: 250px;
+        }
+        .leadership{
+            height: calc(70vh - 80px); 
+        }
+        .leadership .team{
+            display: flex;
+            margin-left: 5px;
+        }
+        .leadership h2{
+            font-size: 30px;
+        }
+        .leadership h3{
+            font-size: 17px;
+        }
+        .leadership .team .teammember{
+            background: rgb(244, 245, 244);
+            margin: 4px;
+            border-radius: 10px;
+            width: 215px;
+            height: 220px;
+            padding: 1%;
+            }
+        .leadership .team_img img{
+            height: 158px;
+            width: 185px;
+        }
+        .leadership .team legend .teammember{
+            margin-top: 4px;
+            margin-left: 5px;
+        } 
+        .leadership .team legend .teammember img{
+            margin-top: 13px;
+        }
+        .leadership .team .teammember .team_img h1{
+            font-size: 15px;
+        }
+        .event1{
+            height: calc(73vh - 80px);
+          }
+        .event1 .image-container{
+            display: flex;
+            position: relative;
+        }
+          .event1 .shop-content{
+            display: flex;
+            display: flexbox;
+            margin-left: 0%;
+            margin-left: 0%;
+            overflow-x: auto;
+            min-width: 1290px;
+            height: 100%;
+        }       
+          .container{
+            max-width: 550px;
+          }
+          .event1 .container{
+            max-width: 490px;
+            height: 110%;
+            padding: 0%;
+            margin: 0px;
+            width: 100%;
+        }
+        .event1 .shop-content .scroll-images{
+            top: 0;
+        }
+        .event1 .cover{
+            margin-left: 0;
+            width: 365px;
+          }
+        .contact h1{
+            margin-right: 18%;
+        }
+        .contact h3{
+            margin-right: 18%;
+        }
+        .contact p{
+            margin-right: 19%;
+        }
+        .contact{  
+            height: calc(111vh - 80px);
+        }
+        .contact p a img{
+            height: 40px;
+            width: 40px;
+            padding: 3px;
+        }
+        .me{
+            position: unset;
+            width: 90%;
+            margin-left: 40px;
+        }
+        .contact .shom{
+            bottom: 30;
+            position: unset;
+            margin-left: 10%;
+            width: 80%;
+
+        }
+        .submit{
+            margin-left: 80px;
+            margin-bottom: 10px;
+        }
+        .form .pea input{
+            width: 250px;
+            margin-left: 16px;
+        }
+        .form textarea{
+            width: 250px;
+            margin-left: 16px;
+        }
+        .copyright{
+            margin-top: 0px;
+        }
+        .testimonials p{
+            margin-left: 2%;
+            margin-right: 2%;
+        }
+        .testimonials .slide img{
+            margin-left: 45%;
+        }
+
+    }

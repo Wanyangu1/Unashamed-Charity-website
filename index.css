@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    }
+    body{
+        font-family: sans-serif;
+  
+    }
+    .amo{
+        background-image: linear-gradient(to right, rgb(7, 245, 233),rgb(165, 163, 241));
+    }
+    .submit p input.active,.submit p input:hover{
+        background-image: linear-gradient(to right, rgb(31, 241, 48),rgb(13, 9, 238));
+        transition: .5s;
+    }
+    legend{
+        text-align: center;
+        font-size: 20px;
+        font-family: cursive;
+        font-weight: bold;
+        padding: 20px;
+    }
+.shom{
+    background-image: linear-gradient(to right, rgb(169, 166, 196),rgb(65, 67, 170));
+    margin-top: 8%;
+    position: absolute;
+    margin-left: 35%;
+    width: 30%;
+    border-radius: 20px;
+    box-shadow: 9px 5px 15px rgb(11, 11, 19);
+}
+.pea{
+    padding: 10px;
+}
+.submit{
+    margin-left: 150px;
+    margin-bottom: 10px;
+    width: 100px;
+    font-family: cursive;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.submit p input{
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: cursive;
+    font-weight: bold;
+}
+.form .pea input{
+    width: 300px;
+    height: 26px;
+    margin-left: 10px;
+    padding: 20px;
+    font-family: cursive;
+    border-radius: 5px;
+}
+.pea p span{
+    font-size: 12px;
+}
+strong{
+    color: rgb(14, 245, 14);
+}
+@media screen and (max-width: 768px)
+{
+    body{
+        width: auto;
+    }
+    legend{
+        text-align: center;
+        font-size: 20px;
+        font-family: cursive;
+        font-weight: bold;
+        padding: 20px;
+    }
+.shom{
+    background-image: linear-gradient(to right, rgb(169, 166, 196),rgb(65, 67, 170));
+    margin-top: 28%;
+    position: absolute;
+    margin-left: 10%;
+    width: 80%;
+}
+.submit{
+    margin-left: auto;
+    margin-right: auto;
+}
+}
+

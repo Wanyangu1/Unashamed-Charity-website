@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>UNASHAMED CHARITY GROUP WEBSITE</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-COMPATIBLE" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="scroll.css">
+        <script>
+            function leftScroll() {
+              const left = document.querySelector(".scroll-images");
+              left.scrollBy(200, 0);
+            }
+            function rightScroll() {
+              const right = document.querySelector(".scroll-images");
+              right.scrollBy(-200, 0);
+            }
+      </script>
+    </head>
+    <body>
+<div class="cover">
+    <div class="scroll-images">
+        <div class="cover">
+            <button class="left" onclick="leftScroll()">Left</button>
+           <div class="scroll-images">
+            <div class="child">
+              <img class="child-img" src="davie.jpg" alt="image" />
+            </div>
+            <div class="child">
+              <img class="child-img" src="davy1.png" alt="image" />
+            </div>
+            <div class="child">
+              <img class="child-img" src="davie.jpg" alt="image" />
+            </div>
+           </div>
+           <button class="right" onclick="rightScroll()">right</button>
+        </div>
+    </div>
+  </div>
+  </body>
+  </html>
